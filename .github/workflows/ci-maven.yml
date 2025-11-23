@@ -27,4 +27,4 @@ jobs:
         run: mvn -B -Dtest=cl.iplacex.automatizacion.unit.AppUnitTest test
 
       - name: Ejecutar pruebas de integración
-        run: mvn -B -Dtest=cl.iplacex.automatizacion.integration.AppIntegrationTest test
+        run: mvn -B -Dtest=cl.iplacex.automatizacion.integration.AppIntegracionTest test
