@@ -1,0 +1,30 @@
+name: CI Maven - Automatización de Pruebas
+
+on:
+  push:
+    branches: [ main, feature/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Validar compilación (build)
+        run: mvn -B clean compile
+
+      - name: Ejecutar pruebas unitarias
+        run: mvn -B -Dtest=cl.iplacex.automatizacion.unit.AppUnitTest test
+
+      - name: Ejecutar pruebas de integración
+        run: mvn -B -Dtest=cl.iplacex.automatizacion.integration.AppIntegrationTest test
