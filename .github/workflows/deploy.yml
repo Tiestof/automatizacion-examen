@@ -34,7 +34,7 @@ jobs:
           java-version: '17'
 
       - name: Ejecutar pruebas de aceptación
-        run: mvn -B -Dtest=cl.iplacex.automatizacion.acceptance.* test
+        run: mvn -B -Dtest=*AcceptanceTest test
 
   deploy-to-test:
     runs-on: ubuntu-latest
