@@ -1,9 +1,13 @@
-package cl.iplacex.automatizacion;
+package cl.iplacex.automatizacion.unit;
 
+import cl.iplacex.automatizacion.App;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AppTest {
+/**
+ * Pruebas unitarias básicas de la clase App.
+ */
+public class AppUnitTest {
 
     @Test
     void pruebaSumaBasica() {
