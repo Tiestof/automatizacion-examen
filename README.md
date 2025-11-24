@@ -186,6 +186,9 @@ Figura 3: Activación del job de rollback luego de un fallo en las pruebas de ac
 Ejecución correcta del pipeline
 <img width="921" height="505" alt="image" src="https://github.com/user-attachments/assets/c87c9a74-20b0-4d28-87ee-d253aff8918e" />
 
+Evidencia de Branches
+<img width="1637" height="790" alt="image" src="https://github.com/user-attachments/assets/c1dbf4a9-168d-4a84-bc2a-fe55475c500d" />
+
 
 
 Nota: las imágenes deben agregarse al repositorio en la ruta indicada (/docs) o actualizar las rutas de las imágenes según la ubicación que se utilice.
